@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+* {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+
+        img{
+            width: 100vw;
+        }
+
+        a {
+           display: block;
+           background-color: darkred;
+           padding: 10px;
+           margin: 0px 10px 8px 10px;
+           text-align: center;
+           font-weight: bolder;
+           font-size: 16px;
+           text-decoration: none;
+           color: whitesmoke;
+           border-radius: 30px;
+           transition: 150ms;
+           
+
+        }
+
+        a:hover {
+            background-color: red;
+            outline: 1px solid whitesmoke;
+        }
+
+        #youtube {
+            background-color: #212121;
+        }
+
+        #github {
+            background-color: #0D1117;
+        }
+
+        #instagram {
+            background-color: #0C1014;
+        }
