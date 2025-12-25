@@ -1,49 +1,136 @@
 @charset "UTF-8";
 
 * {
-            padding: 0px;
-            margin: 0px;
-            font-family: 'Courier New', Courier, monospace;
-        }
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-        ::-webkit-scrollbar {
-            width: 0px;
-            height: 0px;
-        }
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
 
-        img{
-            width: 100vw;
-        }
+img{
+    width: 100vw;
+}
 
-        a {
-           display: block;
-           background-color: darkred;
-           padding: 10px;
-           margin: 0px 10px 8px 10px;
-           text-align: center;
-           font-weight: bolder;
-           font-size: 16px;
-           text-decoration: none;
-           color: whitesmoke;
-           border-radius: 30px;
-           transition: 150ms;
+a {
+    display: block;
+    background-color: darkred;
+    padding: 10px;
+    margin: 0px 10px 8px 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 30px;
+    transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
            
 
-        }
+}
 
-        a:hover {
-            background-color: red;
-            outline: 1px solid whitesmoke;
-        }
+a:hover {
+    transform: translateY(-2px) scale(1.03);
+}
 
-        #youtube {
-            background-color: #212121;
-        }
+/* ==========================
+   CORES POR REDE SOCIAL
+========================== */
 
-        #github {
-            background-color: #0D1117;
-        }
+/* GITHUB */
+body#github {
+    background-color: #0D1117;
+}
 
-        #instagram {
-            background-color: #0C1014;
-        }
+body#github a {
+    background: linear-gradient(135deg, #0d1117, #161b22);
+    border: 1px solid #ffffff30;
+}
+
+body#github a:hover {
+    background: linear-gradient(135deg, #161b22, #21262d);
+    box-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.25),
+        0 0 18px rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px) scale(1.04);
+}
+
+
+/* YOUTUBE */
+body#youtube {
+    background-color: #0F0F0F;
+}
+
+body#youtube a {
+    background-color: #ff0000;
+}
+
+body#youtube a:hover {
+    background-color: #cc0000;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.7);
+}
+
+/* INSTAGRAM */
+body#instagram {
+    background-color: #0D1015;
+}
+
+body#instagram a {
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+}
+
+body#instagram a:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 14px rgba(214, 41, 118, 0.7);
+}
+
+/* FACEBOOK */
+body#facebook {
+    background-color: #262729;
+}
+
+body#facebook a {
+    background-color: #1877f2;
+}
+
+body#facebook a:hover {
+    background-color: #145dbf;
+    box-shadow: 0 0 12px rgba(24, 119, 242, 0.8);
+}
+
+/* LINKEDIN */
+body#linkedin {
+    background-color: #1B1B1B;
+}
+
+body#linkedin a {
+    background-color: #0a66c2;
+}
+
+body#linkedin a:hover {
+    background-color: #084e96;
+    box-shadow: 0 0 12px rgba(10, 102, 194, 0.8);
+}
+
+/* X (Twitter) */
+body#x a {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    border: 1px solid #ffffff40;
+}
+
+body#x a:hover {
+    background: linear-gradient(135deg, #111, #2a2a2a);
+    box-shadow: 
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px) scale(1.04);
+}
